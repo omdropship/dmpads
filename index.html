@@ -1,16 +1,205 @@
-<!DOCTYPE html><html lang="en" ><head> <meta charset="UTF-8"> <title>CodePen - Product Detail Page Design With Image Slider HTML CSS &amp; Javascript</title> <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'><link rel="stylesheet" href="./style.css">
-</head><body><!-- partial:index.partial.html --><div class = "card-wrapper"> <div class = "card"> <!-- card left --> <div class = "product-imgs"> <div class = "img-display"> <div class = "img-showcase"> <img src = "IMG-20250123-WA0004.jpg" alt = "shoe image"> <img src = "IMG-20250123-WA0005.jpg" alt = "shoe image"> <img src = "IMG-20250129-WA0007.jpg" alt = "shoe image"> <img src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_4.jpg" alt = "shoe image"> </div> </div> <div class = "img-select"> <div class = "img-item"> <a href = "#" data-id = "1"> <img src = "IMG-20250123-WA0004.jpg" alt = "shoe image"> </a> </div> <div class = "img-item"> <a href = "#" data-id = "2"> <img src = "IMG-20250123-WA0005.jpg" alt = "shoe image"> </a> </div> <div class = "img-item"> <a href = "#" data-id = "3"> <img src = "IMG-20250129-WA0007.jpg" alt = "shoe image"> </a> </div> <div class = "img-item"> <a href = "#" data-id = "4"> <img src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_4.jpg" alt = "shoe image"> </a> </div> </div> </div> <!-- card right --> <div class = "product-content"> <h2 class = "product-title">nike shoes</h2> <a href = "#" class = "product-link">visit nike store</a> <div class = "product-rating"> <i class = "fas fa-star"></i> <i class = "fas fa-star"></i> <i class = "fas fa-star"></i> <i class = "fas fa-star"></i> <i class = "fas fa-star-half-alt"></i> <span>4.7(21)</span> </div>
-<div class = "product-price"> <p class = "last-price">Harga Normal : <span>Rp 35000</span></p> <p class = "new-price">Harga Promo: <span>Rp 15000 (50%)</span></p> </div>
-<div class = "product-detail"> <h2>about this item: </h2> 
-Promo Dompet Lipat 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Promo Dompet Lipat Harga 25 Ribu Dapat 3 Dompet - Kulit Sintetis, Banyak Slot, Cod Available">
+  <title>Promo Dompet Lipat - Harga 25 Ribu Dapat 3 Dompet</title>
+  <style>
+    /* SASS-like CSS written directly in the HTML for simplicity */
+    :root {
+      --primary-color: #ff6f00;
+      --secondary-color: #e65100;
+      --text-color: #212121;
+      --bg-color: #fff8e1;
+      --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-Promo Dompet Lipat
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-Harga: 15 Ribu!
+    body {
+      font-family: var(--font-family);
+      color: var(--text-color);
+      background: var(--bg-color);
+      line-height: 1.6;
+    }
 
-<h2>Spesifikasi:</h2> <p>Dimensi: 22,5 x 9 x 1 cm (Saat Terbuka)</p> <h2>Material:</h2> <p>Kulit Sintetis Berkualitas</p> <h2>Fitur Produk:</h2> <ul> <li>2 slot utama untuk kartu</li> <li>2 slot tambahan untuk kartu</li> <li>2 kantong sisip tersembunyi</li> <li>2 ruang utama untuk menyimpan uang</li> </ul> <h2>Hubungi:</h2> <p>WhatsApp: <a href="https://wa.me/6282229345743">0822-2934-5743</a></p> <p><strong>Bisa COD (Bayar di Tempat)</strong></p> <p>#DompetPria #DompetWanita #AksesorisFashion #TasDanDompet #AksesorisPria</p> 
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
- <ul> <li>Color: <span>Black</span></li> <li>Available: <span>in stock</span></li> <li>Category: <span>Shoes</span></li> <li>Shipping Area: <span>All over the world</span></li> <li>Shipping Fee: <span>Free</span></li> </ul> </div>
-<div class = "purchase-info"> <input type = "number" min = "0" value = "1"> <button type = "button" class = "btn"> Add to Cart <i class = "fas fa-shopping-cart"></i> </button> <button type = "button" class = "btn">Compare</button> </div>
-<div class = "social-links"> <p>Share At: </p> <a href = "#"> <i class = "fab fa-facebook-f"></i> </a> <a href = "#"> <i class = "fab fa-twitter"></i> </a> <a href = "#"> <i class = "fab fa-instagram"></i> </a> <a href = "#"> <i class = "fab fa-whatsapp"></i> </a> <a href = "#"> <i class = "fab fa-pinterest"></i> </a> </div> </div> </div></div><!-- partial --> <script src="./script.js"></script>
-</body></html>
+    header {
+      background: var(--primary-color);
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1rem;
+    }
+
+    .hero {
+      background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 4rem 0;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta-button {
+      background: var(--secondary-color);
+      color: white;
+      padding: 0.8rem 2rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background: var(--primary-color);
+    }
+
+    section {
+      padding: 4rem 0;
+    }
+
+    .product-details {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .product-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+
+    .product-gallery img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .product-gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    .product-info h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .product-info p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .product-info ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .product-info ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .product-details {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Promo Dompet Lipat</h1>
+      <p>Harga 25 Ribu Dapat 3 Dompet!</p>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Dapatkan Dompet Berkualitas Sekarang!</h1>
+      <p>Kulit sintetis dengan banyak slot untuk kebutuhan sehari-hari.</p>
+      <a href="https://wa.me/6282229345743" class="cta-button">Hubungi via WhatsApp</a>
+    </div>
+  </section>
+
+  <section id="product">
+    <div class="container">
+      <h2>Spesifikasi Produk</h2>
+      <div class="product-details">
+        <div class="product-gallery">
+          <img src="https://via.placeholder.com/300x300" alt="Dompet 1">
+          <img src="https://via.placeholder.com/300x300" alt="Dompet 2">
+          <img src="https://via.placeholder.com/300x300" alt="Dompet 3">
+          <img src="https://via.placeholder.com/300x300" alt="Dompet 4">
+          <img src="https://via.placeholder.com/300x300" alt="Dompet 5">
+        </div>
+        <div class="product-info">
+          <h2>Dompet Lipat Pria & Wanita</h2>
+          <p><strong>Harga:</strong> Rp 25.000 (Dapat 3 Dompet)</p>
+          <p><strong>Dimensi:</strong> 22,5 x 9 x 1 cm (Dalam Keadaan Terbuka)</p>
+          <p><strong>Material:</strong> Kulit Sintetis</p>
+          <p><strong>Fitur Produk:</strong></p>
+          <ul>
+            <li>2 slot untuk menyimpan kartu</li>
+            <li>2 slot tambahan untuk menyimpan kartu</li>
+            <li>2 slot kantung sisip tersembunyi</li>
+            <li>2 ruang utama untuk menyimpan uang</li>
+          </ul>
+          <p><strong>COD Available:</strong> Bayar di tempat!</p>
+          <a href="https://wa.me/6282229345743" class="cta-button">Pesan Sekarang</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Promo Dompet Lipat. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
