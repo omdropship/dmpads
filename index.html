@@ -198,6 +198,96 @@
           </ul>
           <p><strong>COD Available:</strong> Bayar di tempat!</p>
           <a href="https://wa.me/6282229345743" class="cta-button">Pesan Sekarang</a>
+      
+        
+        <style>
+    #faq {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 15px;
+        border-radius: 8px;
+        background: #f9f9f9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    #faq h2 {
+        text-align: center;
+        color: #333;
+    }
+    .faq-item {
+        border-bottom: 1px solid #ddd;
+        padding: 10px 0;
+    }
+    .faq-item h3 {
+        font-size: 16px;
+        color: #007bff;
+        cursor: pointer;
+        margin: 0;
+    }
+    .faq-item p {
+        font-size: 14px;
+        color: #555;
+        display: none;
+        margin-top: 5px;
+    }
+</style>
+
+<section id="faq">
+    <h2>FAQ (Pertanyaan yang Sering Diajukan)</h2>
+
+    <div class="faq-item">
+        <h3 onclick="toggleFAQ(this)">1. Berapa harga dompet ini?</h3>
+        <p>Rp 25.000 untuk 3 dompet. Sangat ekonomis untuk dompet berkualitas seperti ini!</p>
+    </div>
+
+    <div class="faq-item">
+        <h3 onclick="toggleFAQ(this)">2. Apakah dompet ini cocok untuk pria dan wanita?</h3>
+        <p>Ya, desainnya unisex, sehingga cocok digunakan oleh pria maupun wanita.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3 onclick="toggleFAQ(this)">3. Apakah material kulit sintetis ini awet?</h3>
+        <p>Ya, dompet ini terbuat dari kulit sintetis berkualitas tinggi, yang tahan lama dan tidak mudah mengelupas.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3 onclick="toggleFAQ(this)">4. Apakah tersedia berbagai pilihan warna?</h3>
+        <p>Ya, kami menyediakan beberapa pilihan warna. Silakan hubungi kami untuk mengecek ketersediaan warna saat pemesanan.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3 onclick="toggleFAQ(this)">5. Apakah bisa membeli dalam jumlah banyak?</h3>
+        <p>Tentu! Kami menerima pembelian grosir dengan harga spesial. Silakan hubungi kami untuk informasi lebih lanjut.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3 onclick="toggleFAQ(this)">6. Berapa lama waktu pengiriman?</h3>
+        <p>Pengiriman biasanya memakan waktu 2-5 hari kerja, tergantung lokasi Anda.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3 onclick="toggleFAQ(this)">7. Apakah ada garansi jika barang rusak saat diterima?</h3>
+        <p>Ya, jika Anda menerima produk dalam kondisi cacat atau rusak, harap hubungi kami dalam waktu 24 jam setelah menerima barang untuk penggantian.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3 onclick="toggleFAQ(this)">8. Bagaimana cara memesan?</h3>
+        <p>Anda bisa langsung menghubungi kami melalui WhatsApp atau memesan melalui marketplace yang kami sediakan.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3 onclick="toggleFAQ(this)">9. Apakah bisa bayar di tempat (COD)?</h3>
+        <p>Ya, kami menyediakan layanan COD (Bayar di Tempat) untuk kenyamanan dan keamanan Anda dalam berbelanja.</p>
+    </div>
+</section>
+
+<script>
+    function toggleFAQ(element) {
+        let answer = element.nextElementSibling;
+        answer.style.display = answer.style.display === "block" ? "none" : "block";
+    }
+</script>
+        
         </div>
       </div>
     </div>
